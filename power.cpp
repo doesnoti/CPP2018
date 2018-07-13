@@ -1,15 +1,20 @@
 #include <iostream>
+
+using namespace std;
+
+void Umntwo(int a)
+{
+	int p = 1;
+	for (int i = 1; i <= a; i++)
+	{
+		cout << p << " ";
+		p *= 2;
+	}
+	cout << endl;
+}
+
 int main()
 {
-int b=2;
-for(int i=0;i<10;++i)
-{
-int p;
-p=1;
-for(int t=1;t<=i;++t)
-p=p*b;
-std::cout<<p<<" ";
-}
-std::cout<<std::endl;
-return 0;
+	Umntwo(10);
+	return 0;
 }
